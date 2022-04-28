@@ -1,0 +1,290 @@
+﻿public class Run
+	{
+		public static StreamWriter bout;
+		public static String[] varTypes = new String[]{		"integer 16" ,	"string 128" ,	"integer 16"};
+		public static String[] varReferences = new String[]{"poradie" ,		"data" ,		"dataLength"};
+		public static int[] varColumns = new int[]{			-1,				10,				-1};
+		public const int colTime = 1;
+		public const int colID = 2;
+
+
+
+		public static void Main(String[] args)
+		{
+			bout = new StreamWriter("output.vcd");
+		List<string[]> data = new List<string[]>();
+		var allIDs = Run.GetAllIDs(data);
+
+		// writing header section
+		bout.Write("$date today $end");
+		bout.WriteLine();
+		bout.Write("$timescale 1 us $end");
+		bout.WriteLine();
+
+		String[][] varIdentifiers = Run.GenerateVarIdentifiers(allIDs.Count, Run.varTypes.Length);
+		String[][] varInitialisers = Run.AssembleVarInit(allIDs, varIdentifiers);
+		Run.WriteDefinitions(allIDs, varInitialisers);
+
+		// writing data section
+		bout.Write("#" + data[0][Run.colTime]);
+
+		// start time
+		bout.WriteLine();
+		Run.WriteData(data, varIdentifiers, allIDs);
+		bout.Close();
+	}
+	public static List<String> GetAllIDs(List<string[]> data)
+	{
+		var ids = new List<String>();
+		foreach (String[] row in data)
+		{
+			if (!ids.Contains(row[Run.colID]))
+			{
+				ids.Add(row[Run.colID]);
+			}
+		}
+		return ids;
+	}
+	public static string[][] AssembleVarInit(List<string> ids, String[][] varIdentifiers)
+	{
+		String[][] varInitialisers = new String[ids.Count][];
+		for (var i = 0; i < ids.Count; i++)
+			{
+				varInitialisers[i] = new String[Run.varTypes.Length];
+			for (var j = 0; j < Run.varTypes.Length; j++)
+			{
+				varInitialisers[i][j] = "$var " + Run.varTypes[j] + " " + varIdentifiers[i][j] + " " + Run.varReferences[j] + "_" + ids[i] + " $end";
+			}
+		}
+		return varInitialisers;
+	}
+	public static string[][] GenerateVarIdentifiers(int numIDs, int numVars)
+	{
+		String[][] varIdentifiers = new String[numIDs][];
+		var charIterator = 33;
+		for (var i = 0; i < numIDs; i++)
+		{
+				varIdentifiers[i] = new string[numVars];
+			for (var j = 0; j < numVars; j++)
+			{
+				String identifier;
+				if (charIterator < 48)
+				{
+					identifier = Convert.ToString((char)charIterator);
+				}
+				else
+				{
+					identifier = Convert.ToString((char)((charIterator % 48) + 33));
+				}
+				charIterator++;
+				varIdentifiers[i][j] = identifier;
+			}
+		}
+		return varIdentifiers;
+	}
+	public static void WriteDefinitions(List<string> ids, String[][] varInitialisers)
+	{
+		for (var i = 0; i < ids.Count; i++)
+		{
+			bout.Write("$scope module " + ids[i] + " $end");
+			bout.WriteLine();
+			for (var j = 0; j < varInitialisers[i].Length; j++)
+			{
+				bout.Write(varInitialisers[i][j]);
+				bout.WriteLine();
+			}
+			bout.Write("$upscope $end");
+			bout.WriteLine();
+		}
+		bout.Write("$enddefinitions $end");
+		bout.WriteLine();
+	}
+	public static void WriteData(List<string[]> data, String[][] varIdentifiers, List<string> ids)
+	{
+		var numIDs = varIdentifiers.Length;
+			var dataSize = data.Count;
+			for (var i = 0; i < dataSize; i++)
+		{
+			String[] dataRow = data[i];
+			bout.Write("#" + dataRow[Run.colTime] + " ");
+			for (var j = 0; j < numIDs; j++)
+			{
+				if (dataRow[Run.colID].Equals(ids[j]))
+				{
+					// ked ID riadka nezodpoveda id v DB tak sa preskoci
+					Run.WriteVCDRow(dataRow, varIdentifiers[j], i);
+				}
+				else if (i == 0)
+				{
+					String[] blankDataRow = new String[]
+					{
+						"" , dataRow[Run.colTime] , "0" , "0" , "0" , "0" , "0" , "0" , "0" , "0" , "0"
+					};
+					Run.WriteVCDRow(blankDataRow, varIdentifiers[j], -1);
+				}
+			}
+		}
+	}
+	public static void WriteVCDRow(String[] dataRow, String[] varIdentifiers, int i)
+	{
+		var numVars = varIdentifiers.Length;
+		for (var k = 0; k < numVars; k++)
+		{
+			if (Run.varColumns[k] >= 0)
+			{
+				if (Run.varTypes[k].Contains("integer"))
+				{
+					bout.Write("b" + Convert.ToString(int.Parse(dataRow[Run.varColumns[k]]), 2) + " " + varIdentifiers[k] + " ");
+				}
+				else if (Run.varTypes[k].Contains("string"))
+				{
+					bout.Write("s" + dataRow[Run.varColumns[k]] + " " + varIdentifiers[k] + " ");
+				}
+			}
+			else
+			{
+				if (Run.varReferences[k].Equals("poradie"))
+				{
+					bout.Write("b" + Convert.ToString(i + 1, 2) + " " + varIdentifiers[k] + " ");
+				}
+				else if (Run.varReferences[k].Equals("dataLength"))
+				{
+					bout.Write("b" + Run.GetDataLength(int.Parse(dataRow[9])) + " " + varIdentifiers[k] + " ");
+				}
+			}
+		}
+		bout.WriteLine();
+	}
+	public static String GetDataLength(int dlc)
+	{
+		int dataLength;
+		if (dlc <= 8)
+		{
+			dataLength = dlc;
+		}
+		else
+		{
+			switch (dlc)
+			{
+				case 9:
+					dataLength = 12;
+					break;
+				case 10:
+					dataLength = 16;
+					break;
+				case 11:
+					dataLength = 20;
+					break;
+				case 12:
+					dataLength = 24;
+					break;
+				case 13:
+					dataLength = 32;
+					break;
+				case 14:
+					dataLength = 48;
+					break;
+				case 15:
+					dataLength = 64;
+					break;
+				default:
+					throw new Exception("Unexpected value: " + dlc.ToString());
+			}
+		}
+		return Convert.ToString(dataLength, 2);
+	}
+}
+
+
+
+
+private async Task GetAllIDsAsync()
+		{
+
+			for (int i = 0; i < files.Count; i++)
+			{
+
+				string[] fileText = await ReadFileAsync(files[i]);
+
+				for (int j = 1; j < fileText.Length; j++)
+				{
+
+					string[] row = fileText[j].Split(";");
+
+					if (i == 0 && j == 1)
+					{
+						startTime = row[VCDGenerator.colTime];
+					}
+
+					if (!allIDs.Contains(row[VCDGenerator.colID]))
+					{
+						allIDs.Add(row[VCDGenerator.colID]);
+					}
+
+
+				}
+			}
+		}
+		
+
+
+		private async Task GetAllIDsAsyncBuffered()
+		{
+			UTF8Encoding encoding = new UTF8Encoding(true);
+
+			for (int i = 0; i < files.Count; i++)
+			{
+				var file = files[i];
+
+				Stream fs = file.OpenReadStream(1000000000);
+
+				int progress = 0;
+				int bufferSize = 1000;
+				List<byte> queue = new List<byte>();
+
+				int j = 0;
+				while (progress + bufferSize < fs.Length)
+				{
+					if (j == 606)
+						Console.WriteLine();
+					string queueString = encoding.GetString(queue.ToArray());
+
+					if (queueString.Count(f => (f == '\n')) > 1)
+					{
+						string row = queueString.Substring(0, queueString.IndexOf(Environment.NewLine, StringComparison.Ordinal));
+						int numBytes = encoding.GetByteCount(row) + encoding.GetByteCount("\n");
+						queue.RemoveRange(0, numBytes);
+						queueString = encoding.GetString(queue.ToArray());
+
+						string[] rowSplit = row.Split(";");
+						if (i == 0 && j == 1)
+						{
+							startTime = rowSplit[VCDGenerator.colTime];
+						}
+
+						if ((!allIDs.Contains(rowSplit[VCDGenerator.colID])) && j != 0)
+						{
+							allIDs.Add(rowSplit[VCDGenerator.colID]);
+						}
+						j++;
+					}
+					else
+					{
+						byte[] tempBuffer = new byte[bufferSize];
+						await fs.ReadAsync(tempBuffer, 0, bufferSize-1);
+						progress += bufferSize;
+						
+						foreach (byte b in tempBuffer)
+						{
+							queue.Add(b);
+						}
+
+					}
+				}
+				fs.Close();
+			}
+		}
+
+
+
+}

@@ -1,0 +1,63 @@
+body[b-n3bkvz38ic] {
+}
+.timeline[b-n3bkvz38ic] {
+    height: 5px;
+    background: blue;
+    margin: 40px 0px;
+}
+.timeline_container[b-n3bkvz38ic] {
+    overflow: scroll;
+    width: 1000px;
+    display: block;
+    resize: horizontal;
+    
+}
+.dot[b-n3bkvz38ic] {
+    height: 15px;
+    width: 15px;
+    background: cornflowerblue;
+    border-radius: 50%;
+    display: inline;
+    top: -10px;
+    margin-left: -15px;
+    position: relative;
+    padding: 0px;
+}
+.vertical_line[b-n3bkvz38ic] {
+    height: 100%;
+    width: 200px;
+    border-left: 1px solid black;
+    padding: 0;
+    margin: 0 0 0 -200px;
+    display: inline-block;
+    position: relative;
+    color: black;
+    pointer-events: none;
+    left: 0;
+}
+.vertical_line_container[b-n3bkvz38ic] {
+    width: 100%;
+    height: 100px;
+    margin-top: -100px;
+    will-change: contents;
+
+}
+#user-cursor[b-n3bkvz38ic] {
+    border-color: green;
+    color: green;
+    
+}
+#user-cursor-text[b-n3bkvz38ic] {
+    background-color: white;
+}
+.input-mask[b-n3bkvz38ic] {
+    display: inline-block;
+    width: 2em;
+}
+.mask-container[b-n3bkvz38ic] {
+    display: inline-block;
+    width: 2em;
+    padding: 3px;
+    text-align: center;
+
+}

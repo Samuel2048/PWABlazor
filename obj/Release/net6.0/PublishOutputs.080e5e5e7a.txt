@@ -1,0 +1,1 @@
+C:\Users\samue\Documents\GIT\RPJ\can-bus-data-logger\PWABlazor\obj\Release\net6.0\browser-wasm\PubTmp\Out\web.config

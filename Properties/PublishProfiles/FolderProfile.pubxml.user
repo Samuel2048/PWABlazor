@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <_PublishTargetUrl>C:\Users\samue\Documents\GIT\RPJ\can-bus-data-logger\PWABlazor\bin\Release\net6.0\browser-wasm\publish\</_PublishTargetUrl>
+    <History>True|2022-04-28T20:13:41.1538031Z;True|2022-04-28T22:00:25.1158247+02:00;True|2022-04-28T21:49:01.1846624+02:00;True|2022-04-28T20:59:14.4449442+02:00;True|2022-04-28T20:48:44.2789167+02:00;True|2022-04-28T17:50:53.9645713+02:00;True|2022-04-28T17:42:03.7717571+02:00;True|2022-04-28T17:25:24.9357052+02:00;True|2022-04-28T16:59:53.9216847+02:00;True|2022-04-28T16:46:00.7390697+02:00;True|2022-04-27T16:51:25.6517059+02:00;True|2022-04-27T14:38:40.1653572+02:00;False|2022-04-27T14:37:52.0841873+02:00;True|2022-04-27T14:16:47.7267688+02:00;False|2022-04-27T14:05:17.3449446+02:00;False|2022-04-27T13:58:30.1391761+02:00;True|2022-04-19T18:24:33.7303028+02:00;True|2022-04-19T18:11:02.4181063+02:00;</History>
+  </PropertyGroup>
+</Project>

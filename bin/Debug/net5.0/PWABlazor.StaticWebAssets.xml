@@ -1,0 +1,4 @@
+﻿<StaticWebAssets Version="1.0">
+  <ContentRoot BasePath="/" Path="C:\Users\samue\Documents\GIT\RPJ\can-bus-data-logger\PWABlazor\bin\Debug\net5.0\wwwroot\" />
+  <ContentRoot BasePath="/" Path="C:\Users\samue\Documents\GIT\RPJ\can-bus-data-logger\PWABlazor\obj\Debug\net5.0\scopedcss\bundle\" />
+</StaticWebAssets>
