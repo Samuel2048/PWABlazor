@@ -65,7 +65,7 @@
       "url": "index.html"
     },
     {
-      "hash": "sha256-\/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej\/m4=",
+      "hash": "sha256-zp0HUArZHsK1JMJwdk7EyaM+eDINjTdOxADt5Ij2JRs=",
       "url": "lib\/jquery-3.6.0.min.js"
     },
     {
@@ -841,10 +841,6 @@
       "url": "_framework\/System.Private.CoreLib.dll"
     },
     {
-      "hash": "sha256-WYno\/cK5MDsl5yi4T\/\/QgUskbBfhLL77i+c0uKzO9+c=",
-      "url": "_framework\/dotnet.6.0.4.dckq00jdfr.js"
-    },
-    {
       "hash": "sha256-IAZQkATPLfknBs7WdmI3T1SiL6xDp4WjMEnYenpVpcE=",
       "url": "_framework\/dotnet.timezones.blat"
     },
@@ -883,7 +879,11 @@
     {
       "hash": "sha256-u8TXhrNs6GDml2c27vtGO0evtNCyblPbMhp9lF8OpeA=",
       "url": "_framework\/blazor.boot.json"
+    },
+    {
+      "hash": "sha256-WYno\/cK5MDsl5yi4T\/\/QgUskbBfhLL77i+c0uKzO9+c=",
+      "url": "_framework\/dotnet.6.0.4.kautc85apc.js"
     }
   ],
-  "version": "4A1S1S\/Y"
+  "version": "ckWrGzlh"
 };

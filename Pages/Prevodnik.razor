@@ -1,6 +1,7 @@
 ﻿@page "/"
 @inject IJSRuntime iJSRuntime
-<h1>Prevodník</h1>
+
+<h1 class="h1 text-left">Visualizer</h1>
 
 
 <div>
@@ -20,12 +21,14 @@
 </div>
 <p>@messageFiles</p>
 
+<br />
+<h2 class="h2 text-left">Filtrovanie</h2>
 
 <div class="container">
-    <h3 class="text-left font-weight-bold">Filtrovanie</h3>
+    <!--<h3 class="text-left font-weight-bold">Filtrovanie</h3>-->
     <div class="row">
-        <div class="col-3">
-            <p class="text-center font-weight-bold">CAN ID</p>
+        <div class="col-3 border border-light m-3 rounded bg-light">
+            <p class="text-center font-weight-bold pt-2">CAN ID</p>
             <div style="@styleLoadingIds" class="align-items-center">
               <strong>Vytváranie zoznamu ID...</strong>
               <div class="spinner-border ml-auto" role="status" aria-hidden="true"></div>
@@ -43,8 +46,8 @@
     }
 }
 </div>
-<div class="col-2">
-    <p class="text-center font-weight-bold">Dĺžka</p>
+<div class="col-2 border border-light m-3 rounded bg-light">
+    <p class="text-center font-weight-bold pt-2">Dĺžka</p>
     @if (selectableLength is not null)
 {
     foreach (var item in selectableLength)
@@ -58,9 +61,11 @@
     }
 }
 </div>
-<div class="col-2">
+<div class="col-2 border border-light m-3 rounded bg-light">
+    <p class="text-center font-weight-bold pt-2">Maska</p>
     <EditForm Model="model">
-        <div style="display:block">
+ 
+        <div style="display:block;text-align:center;">
         <InputSelect id="length" @bind-Value="@SelectedLengthProperty">
             @foreach (var option in dlcConversion)
            {
@@ -94,7 +99,7 @@
 </div>
 
 </div>
-<button class="btn btn-primary m-2" @onclick="@ApplyFilter">Filtrovať</button>
+<!--<button class="btn btn-primary m-2" @onclick="@ApplyFilter">Filtrovať</button>-->
 <br />
 <button class="btn btn-secondary m-2" @onclick="@zoomIn">
     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-zoom-in" viewBox="0 0 16 16">
@@ -140,8 +145,13 @@
 </div>
 
 
+<br />
+<br />
+<br />
+<br />
 
 <h2 class="h2 text-center">Tabuľkové zobrazenie</h2>
+<br />
 <div class="container overflow-auto " style="height: 400px">
     <TableTemplate Items="filtratedFrames" Context="canframe">
         <TableHeader>
@@ -162,9 +172,6 @@
         </RowTemplate>
     </TableTemplate>
 </div>
-
-
-
 
 @code {
                   /*<td>@canframe.RRS_RTR1</td>
