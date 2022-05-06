@@ -83,10 +83,11 @@
     </EditForm>
     <br />
 </div>
-<div class="col-5">
+<div class="col-2 mt-3 border border-light rounded bg-light mb-12">
+    <p class="text-center font-weight-bold pt-2">Údaje</p>
     @if (selectedFrame != null)
 {
-    <p>
+    <p class="pt-2">
         <b>FD:      </b>   <span>@selectedFrame.FD1</span> <br>
         <b>Čas:       </b>   <span>@selectedFrame.TimeHumanized()</span> <br>
         <b>CAN ID:   </b>   <span>@selectedFrame.Id</span> <br>

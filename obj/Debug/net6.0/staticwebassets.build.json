@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "IcjzakTy3iAsMZc0hcHABffpAb0fEvbPQ0P8Ws3+MPg=",
+  "Hash": "T0nkAqc3M1AM1rGbz20sjtRw0pz73SkVo3d1GDIvPpU=",
   "Source": "PWABlazor",
   "BasePath": "/",
   "Mode": "Root",
@@ -7157,6 +7157,23 @@
       "OriginalItemSpec": "wwwroot\\icon-512.png"
     },
     {
+      "Identity": "C:\\Users\\GHOST\\Documents\\GitHub\\PWABlazor\\wwwroot\\icons8-timeline.png",
+      "SourceId": "PWABlazor",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\GHOST\\Documents\\GitHub\\PWABlazor\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "icons8-timeline.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\icons8-timeline.png"
+    },
+    {
       "Identity": "C:\\Users\\GHOST\\Documents\\GitHub\\PWABlazor\\wwwroot\\index.html",
       "SourceId": "PWABlazor",
       "SourceType": "Discovered",
@@ -7225,6 +7242,23 @@
       "OriginalItemSpec": "wwwroot\\Prevodnik.js"
     },
     {
+      "Identity": "C:\\Users\\GHOST\\Documents\\GitHub\\PWABlazor\\wwwroot\\samko.jpg",
+      "SourceId": "PWABlazor",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\GHOST\\Documents\\GitHub\\PWABlazor\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "samko.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\samko.jpg"
+    },
+    {
       "Identity": "C:\\Users\\GHOST\\Documents\\GitHub\\PWABlazor\\wwwroot\\sample-data\\weather.json",
       "SourceId": "PWABlazor",
       "SourceType": "Discovered",
@@ -7240,6 +7274,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\sample-data\\weather.json"
+    },
+    {
+      "Identity": "C:\\Users\\GHOST\\Documents\\GitHub\\PWABlazor\\wwwroot\\Screen1.png",
+      "SourceId": "PWABlazor",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\GHOST\\Documents\\GitHub\\PWABlazor\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "Screen1.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Screen1.png"
+    },
+    {
+      "Identity": "C:\\Users\\GHOST\\Documents\\GitHub\\PWABlazor\\wwwroot\\Screen2.png",
+      "SourceId": "PWABlazor",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\GHOST\\Documents\\GitHub\\PWABlazor\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "Screen2.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Screen2.png"
     }
   ]
 }
