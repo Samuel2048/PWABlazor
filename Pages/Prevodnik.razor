@@ -28,7 +28,7 @@
     <!--<h3 class="text-left font-weight-bold">Filtrovanie</h3>-->
     <div class="row">
         <div class="col-3 border border-light m-3 rounded bg-light">
-            <p class="text-center font-weight-bold pt-2">CAN ID</p>
+            <p class="text-center font-weight-bold pt-2">CAN ID*</p>
             <div style="@styleLoadingIds" class="align-items-center">
               <strong>Vytváranie zoznamu ID...</strong>
               <div class="spinner-border ml-auto" role="status" aria-hidden="true"></div>
@@ -47,7 +47,7 @@
 }
 </div>
 <div class="col-2 border border-light m-3 rounded bg-light">
-    <p class="text-center font-weight-bold pt-2">Dĺžka</p>
+    <p class="text-center font-weight-bold pt-2">Dĺžka*</p>
     @if (selectableLength is not null)
 {
     foreach (var item in selectableLength)
@@ -299,7 +299,7 @@
     private void zoomOut()
     {
         if (timeSpan/accuracy > 800)
-            accuracy++;
+            accuracy+=5;
         StateHasChanged();
     }
 
