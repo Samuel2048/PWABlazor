@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "T0nkAqc3M1AM1rGbz20sjtRw0pz73SkVo3d1GDIvPpU=",
+  "Hash": "LW1bNocFkQ8/hCBsnhkizhN383lMZO5aLhha2aGVcsM=",
   "Source": "PWABlazor",
   "BasePath": "/",
   "Mode": "Root",
@@ -7157,23 +7157,6 @@
       "OriginalItemSpec": "wwwroot\\icon-512.png"
     },
     {
-      "Identity": "C:\\Users\\GHOST\\Documents\\GitHub\\PWABlazor\\wwwroot\\icons8-timeline.png",
-      "SourceId": "PWABlazor",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\GHOST\\Documents\\GitHub\\PWABlazor\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "icons8-timeline.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\icons8-timeline.png"
-    },
-    {
       "Identity": "C:\\Users\\GHOST\\Documents\\GitHub\\PWABlazor\\wwwroot\\index.html",
       "SourceId": "PWABlazor",
       "SourceType": "Discovered",
@@ -7206,6 +7189,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\jquery-3.6.0.min.js"
+    },
+    {
+      "Identity": "C:\\Users\\GHOST\\Documents\\GitHub\\PWABlazor\\wwwroot\\logo.png",
+      "SourceId": "PWABlazor",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\GHOST\\Documents\\GitHub\\PWABlazor\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "logo.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\logo.png"
     },
     {
       "Identity": "C:\\Users\\GHOST\\Documents\\GitHub\\PWABlazor\\wwwroot\\manifest.json",
