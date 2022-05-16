@@ -1602,23 +1602,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\GHOST\\.nuget\\packages\\": {},
-    "D:\\Program Files (x86)\\Microsoft\\NuGetPackages": {}
+    "C:\\Users\\samue\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\GHOST\\Documents\\GitHub\\PWABlazor\\PWABlazor.csproj",
+      "projectUniqueName": "C:\\Users\\samue\\Documents\\GitHub\\PWABlazor\\PWABlazor.csproj",
       "projectName": "PWABlazor",
-      "projectPath": "C:\\Users\\GHOST\\Documents\\GitHub\\PWABlazor\\PWABlazor.csproj",
-      "packagesPath": "C:\\Users\\GHOST\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\GHOST\\Documents\\GitHub\\PWABlazor\\obj\\",
+      "projectPath": "C:\\Users\\samue\\Documents\\GitHub\\PWABlazor\\PWABlazor.csproj",
+      "packagesPath": "C:\\Users\\samue\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\samue\\Documents\\GitHub\\PWABlazor\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "D:\\Program Files (x86)\\Microsoft\\NuGetPackages"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\GHOST\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\samue\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -1672,7 +1672,7 @@
         "downloadDependencies": [
           {
             "name": "Microsoft.NETCore.App.Runtime.Mono.browser-wasm",
-            "version": "[6.0.4, 6.0.4]"
+            "version": "[6.0.1, 6.0.1]"
           }
         ],
         "frameworkReferences": {
@@ -1680,7 +1680,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
       }
     },
     "runtimes": {

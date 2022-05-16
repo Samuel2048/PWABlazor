@@ -11,53 +11,53 @@ build_property.EnableTrimAnalyzer = true
 build_property.IncludeAllContentForSelfExtract = 
 build_property.RootNamespace = PWABlazor
 build_property.RootNamespace = PWABlazor
-build_property.ProjectDir = C:\Users\GHOST\Documents\GitHub\PWABlazor\
+build_property.ProjectDir = C:\Users\samue\Documents\GitHub\PWABlazor\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\GHOST\Documents\GitHub\PWABlazor
+build_property.MSBuildProjectDirectory = C:\Users\samue\Documents\GitHub\PWABlazor
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/GHOST/Documents/GitHub/PWABlazor/App.razor]
+[C:/Users/samue/Documents/GitHub/PWABlazor/App.razor]
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/GHOST/Documents/GitHub/PWABlazor/Pages/Counter.razor]
+[C:/Users/samue/Documents/GitHub/PWABlazor/Pages/Counter.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291bnRlci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/GHOST/Documents/GitHub/PWABlazor/Pages/DownloadPage.razor]
+[C:/Users/samue/Documents/GitHub/PWABlazor/Pages/DownloadPage.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRG93bmxvYWRQYWdlLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/GHOST/Documents/GitHub/PWABlazor/Pages/FetchData.razor]
+[C:/Users/samue/Documents/GitHub/PWABlazor/Pages/FetchData.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRmV0Y2hEYXRhLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/GHOST/Documents/GitHub/PWABlazor/Pages/Index.razor]
+[C:/Users/samue/Documents/GitHub/PWABlazor/Pages/Index.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/GHOST/Documents/GitHub/PWABlazor/Shared/SurveyPrompt.razor]
+[C:/Users/samue/Documents/GitHub/PWABlazor/Shared/SurveyPrompt.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFN1cnZleVByb21wdC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/GHOST/Documents/GitHub/PWABlazor/Shared/TableTemplate.razor]
+[C:/Users/samue/Documents/GitHub/PWABlazor/Shared/TableTemplate.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFRhYmxlVGVtcGxhdGUucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/GHOST/Documents/GitHub/PWABlazor/_Imports.razor]
+[C:/Users/samue/Documents/GitHub/PWABlazor/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/GHOST/Documents/GitHub/PWABlazor/Pages/Prevodnik.razor]
+[C:/Users/samue/Documents/GitHub/PWABlazor/Pages/Prevodnik.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJldm9kbmlrLnJhem9y
 build_metadata.AdditionalFiles.CssScope = b-n3bkvz38ic
 
-[C:/Users/GHOST/Documents/GitHub/PWABlazor/Shared/MainLayout.razor]
+[C:/Users/samue/Documents/GitHub/PWABlazor/Shared/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-jd7r1edezh
 
-[C:/Users/GHOST/Documents/GitHub/PWABlazor/Shared/NavMenu.razor]
+[C:/Users/samue/Documents/GitHub/PWABlazor/Shared/NavMenu.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5hdk1lbnUucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-u3pvsxzmqs

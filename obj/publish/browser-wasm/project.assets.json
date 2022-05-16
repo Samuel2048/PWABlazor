@@ -1608,11 +1608,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\samue\\Documents\\GIT\\RPJ\\can-bus-data-logger\\PWABlazor\\PWABlazor.csproj",
+      "projectUniqueName": "C:\\Users\\samue\\Documents\\GitHub\\PWABlazor\\PWABlazor.csproj",
       "projectName": "PWABlazor",
-      "projectPath": "C:\\Users\\samue\\Documents\\GIT\\RPJ\\can-bus-data-logger\\PWABlazor\\PWABlazor.csproj",
+      "projectPath": "C:\\Users\\samue\\Documents\\GitHub\\PWABlazor\\PWABlazor.csproj",
       "packagesPath": "C:\\Users\\samue\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\samue\\Documents\\GIT\\RPJ\\can-bus-data-logger\\PWABlazor\\obj\\publish\\browser-wasm\\",
+      "outputPath": "C:\\Users\\samue\\Documents\\GitHub\\PWABlazor\\obj\\publish\\browser-wasm\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -1669,6 +1669,12 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.NETCore.App.Runtime.Mono.browser-wasm",
+            "version": "[6.0.1, 6.0.1]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"

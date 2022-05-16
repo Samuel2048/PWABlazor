@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "GYGuO9m27sc6m6wQJjMPsmzq6dMiVM+Qn2FLGb0/37uaQJmOZQFTJvJ3j6dqJ7n3oaLvf4YGx65d/Pysb6pELw==",
+  "dgSpecHash": "k7UbqK7u3yVh2i7w43kpHTQvPS+afBQRifDuFPhIa2MFhjuQJFTA2EzL0IZKNZ8d1H+M8vNlWnpLWoCZWowLhQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\samue\\Documents\\GIT\\RPJ\\can-bus-data-logger\\PWABlazor\\PWABlazor.csproj",
+  "projectFilePath": "C:\\Users\\samue\\Documents\\GitHub\\PWABlazor\\PWABlazor.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\samue\\.nuget\\packages\\microsoft.aspnetcore.authorization\\6.0.1\\microsoft.aspnetcore.authorization.6.0.1.nupkg.sha512",
     "C:\\Users\\samue\\.nuget\\packages\\microsoft.aspnetcore.components\\6.0.1\\microsoft.aspnetcore.components.6.0.1.nupkg.sha512",
@@ -33,7 +33,8 @@
     "C:\\Users\\samue\\.nuget\\packages\\system.net.http.json\\6.0.0\\system.net.http.json.6.0.0.nupkg.sha512",
     "C:\\Users\\samue\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
     "C:\\Users\\samue\\.nuget\\packages\\system.text.encodings.web\\6.0.0\\system.text.encodings.web.6.0.0.nupkg.sha512",
-    "C:\\Users\\samue\\.nuget\\packages\\system.text.json\\6.0.0\\system.text.json.6.0.0.nupkg.sha512"
+    "C:\\Users\\samue\\.nuget\\packages\\system.text.json\\6.0.0\\system.text.json.6.0.0.nupkg.sha512",
+    "C:\\Users\\samue\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\6.0.1\\microsoft.netcore.app.runtime.mono.browser-wasm.6.0.1.nupkg.sha512"
   ],
   "logs": []
 }
